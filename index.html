@@ -14,18 +14,59 @@
       src="https://kit.fontawesome.com/ab867b532a.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body
-    class="bg-gray-100 font-sans text-gray-700 leading-normal tracking-normal"
+    class="container mx-auto bg-gray-100 ffont-manrope text-gray-700 leading-normal tracking-normal"
   >
     <header class="container mx-auto">
-      <div class="navbar w-11/12 mx-auto">
+      <!-- Navbar  -->
+      <nav class="navbar mx-auto">
         <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <a class="btn btn-ghost text-xl text-slate-950">
+            <i
+              class="fa-solid fa-arrow-up-right-from-square px-2 text-lime-500"
+            ></i>
+            Rinterio
+          </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-slate-950">
+            <li>
+              <a href="#" class="btn btn-ghost text-black font-bold">Home</a>
+            </li>
+            <li><a href="#" class="btn btn-ghost">Services</a></li>
+            <li><a href="#" class="btn btn-ghost">Portfolio</a></li>
+            <li><a href="#" class="btn btn-ghost">Blogs</a></li>
+            <li><a href="#" class="btn btn-ghost">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end flex items-center">
+          <div class="hidden sm:flex space-x-2">
+            <button
+              class="btn btn-ghost rounded-full bg-white border-none text-2xl p-2"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button
+              class="btn btn-ghost rounded-full bg-white border-none text-2xl p-2"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button class="btn btn-ghost rounded-full bg-lime-300 text-black">
+              Book Consult<i
+                class="fa-solid fa-arrow-up-right-from-square px-1"
+              ></i>
+            </button>
+          </div>
+          <div class="dropdown lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                class="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -40,84 +81,44 @@
             </div>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content text-slate-950 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              class="menu menu-sm dropdown-content text-slate-50 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-1"
             >
-              <li>
-                <a href="#" class="btn-ghost text-black font-bold">Home</a>
-              </li>
-              <li>
-                <a href="#" class="btn-ghost">Services</a>
-              </li>
+              <li><a href="#" class="btn-ghost font-bold">Home</a></li>
+              <li><a href="#" class="btn-ghost">Services</a></li>
               <li><a href="#" class="btn-ghost">Portfolio</a></li>
               <li><a href="#" class="btn-ghost">Blogs</a></li>
               <li><a href="#" class="btn-ghost">Contact</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl text-slate-950"
-            ><i
-              class="fa-solid fa-arrow-up-right-from-square px-2 text-lime-500"
-            ></i>
-            Rinterio</a
-          >
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 text-slate-950">
-            <li>
-              <a href="#" class="btn btn-ghost text-black font-bold">Home</a>
-            </li>
-            <li>
-              <a href="#" class="btn btn-ghost">Services</a>
-            </li>
-            <li><a href="#" class="btn btn-ghost">Portfolio</a></li>
-            <li><a href="#" class="btn btn-ghost">Blogs</a></li>
-            <li><a href="#" class="btn btn-ghost">Contact</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end flex justify-evenly items-center">
-          <button
-            class="btn btn-ghost rounded-full bg-white border-none text-3xl"
-          >
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-          <button
-            class="btn btn-ghost rounded-full rounded-full bg-white border-none text-3xl"
-          >
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
+      </nav>
 
-          <button class="btn btn-ghost rounded-full bg-lime-300 text-black">
-            Book Consult<i
-              class="fa-solid fa-arrow-up-right-from-square px-1"
-            ></i>
-          </button>
-        </div>
-      </div>
+      <!-- Hero Section -->
+      <section class="bg-white flex flex-col text-center py-12 px-4 sm:px-6">
+        <img
+          src="./assets/banner.png"
+          class="w-full max-w-lg h-auto object-cover rounded-lg shadow-lg"
+        />
+
+        <h2 class="text-2xl sm:text-3xl font-bold mt-8 mb-4">
+          A barn house of this design has a striking appearance
+        </h2>
+        <p class="text-gray-600 mb-8 max-w-md sm:max-w-lg">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents, and
+          large windows that flood the space with natural light.
+        </p>
+
+        <a
+          href="#"
+          class="btn btn-ghost rounded-full border-lime-500 bg-lime-200 text-black px-6 py-2 text-sm sm:text-base"
+          ><i
+            class="fa-solid fa-arrow-up-right-from-square pr-2 text-lime-500"
+          ></i>
+          View Details
+        </a>
+      </section>
     </header>
-    <!-- Hero Section -->
-    <section class="bg-white flex flex-col items-center text-center py-12">
-      <img
-        src="./assets/banner.png"
-        class="w-full max-w-lg h-auto object-cover"
-      />
-
-      <h2 class="text-3xl font-bold mt-8 mb-4">
-        A barn house of this design has a striking appearance
-      </h2>
-      <p class="text-gray-600 mb-8">
-        The barn house captivates with its blend of rustic charm and modern
-        sophistication, featuring weathered wood, sleek metal accents, and large
-        windows that flood the space with natural light.
-      </p>
-
-      <a
-        href="#"
-        class="btn btn-ghost rounded-full border-lime-500 bg-lime-200 text-black"
-        ><i
-          class="fa-solid fa-arrow-up-right-from-square px-2 text-lime-500"
-        ></i>
-        View Details
-      </a>
-    </section>
 
     <!-- About Section -->
     <section class="container mx-auto w-11/12 py-16">
@@ -498,8 +499,39 @@
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
-      <div class="container mx-auto text-center">
-        <p>&copy; 2024 Rinterio. All rights reserved.</p>
+      <div
+        class="container mx-auto text-center flex flex-col items-center gap-6"
+      >
+        <div class="text-center mb-8">
+          <div class="text-green-400 text-4xl mb-2"></div>
+          <h1 class="text-3xl font-bold">
+            <i
+              class="fa-solid fa-arrow-up-right-from-square text-black bg-lime-300 border-8 border-lime-300 rounded-full"
+            ></i
+            >Rinterio
+          </h1>
+          <p class="text-gray-400 mt-2">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+
+        <ul class="menu menu-horizontal px-1 text-lime-200">
+          <li>
+            <a href="#" class="btn btn-ghost text-white font-bold">Home</a>
+          </li>
+          <li>
+            <a href="#" class="btn btn-ghost">Services</a>
+          </li>
+          <li><a href="#" class="btn btn-ghost">Portfolio</a></li>
+          <li><a href="#" class="btn btn-ghost">Blogs</a></li>
+          <li><a href="#" class="btn btn-ghost">Contact</a></li>
+        </ul>
+        <button class="btn btn-ghost rounded-full bg-lime-300 text-black">
+          Book Consult<i
+            class="fa-solid fa-arrow-up-right-from-square px-1"
+          ></i>
+        </button>
       </div>
     </footer>
   </body>
