@@ -45,16 +45,16 @@
           </ul>
         </div>
         <div class="navbar-end flex items-center">
-          <div class="hidden sm:flex space-x-2">
+          <div class="hidden sm:flex space-x-10">
             <button
-              class="btn btn-ghost rounded-full bg-white border-none text-2xl p-2"
+              class="btn btn-ghost rounded-full bg-white border-none text-2xl p-4"
             >
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-magnifying-glass px-1"></i>
             </button>
             <button
-              class="btn btn-ghost rounded-full bg-white border-none text-2xl p-2"
+              class="btn btn-ghost rounded-full bg-white border-none text-2xl p-4"
             >
-              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-solid fa-cart-shopping px-2"></i>
             </button>
             <button class="btn btn-ghost rounded-full bg-lime-300 text-black">
               Book Consult<i
@@ -81,7 +81,7 @@
             </div>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content text-slate-50 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-1"
+              class="menu menu-sm dropdown-content text-slate-50 bg-slate-900 rounded-box z-[1] mt-3 w-52 p-2 shadow right-1"
             >
               <li><a href="#" class="btn-ghost font-bold">Home</a></li>
               <li><a href="#" class="btn-ghost">Services</a></li>
@@ -129,7 +129,9 @@
             src="./assets/Vector.png"
             alt=""
           />
-          <div class="flex flex-col items-center text-center lg:ml-10">
+          <div
+            class="flex flex-col items-center ml-10 lg:items-start lg:text-left lg:mr-10 sm:items-center sm:text-center"
+          >
             <button
               class="btn bg-white text-gray-700 border-none rounded-full mb-4 hover:bg-gray-200"
             >
@@ -144,11 +146,17 @@
               accents.
             </p>
             <div class="text-left space-y-4">
-              <div class="flex items-center p-4 bg-white rounded-lg shadow-sm">
-                <div class="mr-4">
-                  <img src="./assets/commercial.png" alt="" />
+              <div
+                class="flex items-center text-left p-4 bg-white rounded-lg shadow-sm gap-4 sm:justify-center"
+              >
+                <div class="mr-4 sm:mr-0">
+                  <img
+                    src="./assets/commercial.png"
+                    alt=""
+                    class="w-16 h-16 object-cover"
+                  />
                 </div>
-                <div>
+                <div class="text-left">
                   <h3 class="text-xl font-semibold text-gray-900">
                     Commercial
                   </h3>
@@ -159,11 +167,17 @@
                 </div>
               </div>
 
-              <div class="flex items-center p-4 bg-white rounded-lg shadow-sm">
-                <div class="mr-4">
-                  <img src="./assets/residential.png" alt="" />
+              <div
+                class="flex items-center p-4 bg-white rounded-lg gap-4 shadow-sm sm:justify-center"
+              >
+                <div class="mr-4 sm:mr-0">
+                  <img
+                    src="./assets/residential.png"
+                    alt=""
+                    class="w-16 h-16 object-cover"
+                  />
                 </div>
-                <div>
+                <div class="text-left">
                   <h3 class="text-xl font-semibold text-gray-900">
                     Residential
                   </h3>
@@ -236,6 +250,7 @@
           class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-gray-600"
         >
           <div class="bg-pink-300 p-8 sm:p-12 rounded-lg">
+            <img src="./assets/concept.png" alt="" />
             <h3 class="text-lg sm:text-xl font-semibold mb-2">Concept</h3>
             <p>
               The barn house captivates with its blend of rustic charm and
@@ -243,6 +258,7 @@
             </p>
           </div>
           <div class="bg-yellow-300 p-8 sm:p-12 rounded-lg">
+            <img src="./assets/flow-chart.png" alt="" />
             <h3 class="text-lg sm:text-xl font-semibold mb-2">
               Design Process
             </h3>
@@ -252,6 +268,7 @@
             </p>
           </div>
           <div class="bg-green-300 p-8 sm:p-12 rounded-lg">
+            <img src="assets/vision.png" alt="" />
             <h3 class="text-lg sm:text-xl font-semibold mb-2">Supervision</h3>
             <p>
               The barn house captivates with its blend of rustic charm and
@@ -259,6 +276,7 @@
             </p>
           </div>
           <div class="bg-blue-300 p-8 sm:p-12 rounded-lg">
+            <img src="./assets/budget-planning.png" alt="" srcset="" />
             <h3 class="text-lg sm:text-xl font-semibold mb-2">
               Budget Planning
             </h3>
@@ -292,12 +310,12 @@
         class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
       >
         <div
-          class="p-4 border border-gray-200 rounded-lg flex flex-col sm:flex-row justify-between items-center col-span-1 sm:col-span-2"
+          class="p-4 border border-gray-200 rounded-lg flex flex-col space-x-4 sm:flex-row justify-between items-center col-span-1 sm:col-span-2"
         >
           <img
             src="./assets/img1.png"
             alt=""
-            class="w-full h-48 object-cover mb-4 sm:mb-0"
+            class="w-11/12 h-48 rounded h-48 object-cover mb-4 sm:mb-0"
           />
           <div class="w-full sm:w-2/3">
             <h2 class="text-xl font-semibold mb-2">Commercial</h2>
@@ -322,7 +340,7 @@
           <img
             src="./assets/img2.png"
             alt=""
-            class="w-full h-48 object-cover"
+            class="w-11/12 h-48 rounded object-cover"
           />
         </div>
 
@@ -332,17 +350,17 @@
           <img
             src="./assets/img3.png"
             alt=""
-            class="w-full h-48 object-cover"
+            class="w-11/12 h-48 rounded object-cover"
           />
         </div>
 
         <div
-          class="p-4 border border-gray-200 rounded-lg flex flex-col sm:flex-row justify-between items-center gap-4"
+          class="p-4 border border-gray-200 rounded-lg flex flex-col space-x-4 sm:flex-row justify-between items-center"
         >
           <img
             src="./assets/img4.png"
             alt=""
-            class="w-full h-48 object-cover mb-4 sm:mb-0"
+            class="w-11/12 rounded h-48 object-cover mb-4 sm:mb-0"
           />
           <div class="w-full sm:w-3/4">
             <h2 class="text-xl font-semibold mb-2">Commercial</h2>
@@ -367,7 +385,7 @@
           <img
             src="./assets/img5.png"
             alt=""
-            class="w-full h-48 object-cover"
+            class="w-11/12 h-48 rounded object-cover"
           />
         </div>
       </div>
@@ -542,7 +560,7 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
       <div
-        class="container mx-auto text-center flex flex-col items-center gap-6"
+        class="container mx-auto text-center flex flex-col items-center gap-2"
       >
         <div class="text-center mb-8">
           <div class="text-green-400 text-4xl mb-2"></div>
